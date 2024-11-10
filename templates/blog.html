@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Navbar</title>
+    <link rel="stylesheet" href="/src/stylesheets/styles.css" />
+  </head>
+  <body>
+    <!-- Título animado -->
+
+    <a href="/src/html/index.html"><h1 class="animated-title"></h1></a>
+    <!-- Barra de navegación lateral izquierda -->
+    <div class="navbar-container">
+      <div class="folder">
+        <span onclick="toggleFolder(this)">root@sulli</span>
+        <ul>
+          <li>
+            <a class="file" href="/src/html/root_sulli/biografia.html">Biografia</a>
+          </li>
+          <li>
+            <a class="file" href="/src/html/root_sulli/diplomas.html">Diplomas</a>
+          </li>
+        </ul>
+      </div>
+      <div class="folder">
+        <span onclick="toggleFolder(this)">Proyectos</span>
+        <ul>
+          <li><a class="file" href="/src/html/proyectos/snipe_code.html">Snipe code</a></li>
+        </ul>
+      </div> 
+    </div>
+
+
+    
+  <!-- Contenido del blog de ejemplo -->
+  <div class="blog-content" id="blog">
+    <h2>ROOT@SULLI</h2>
+    <p>Welcome to my personal blog, I'm Sullivan, 27 years old, from Barcelona. Network and systems engineer, with a wide range of knowledge in programming and cybersecurity. Currently, I work for Gram Group, as a network and systems technician. The purpose of this blog is more of a hobby, to upload my writeups and see the progress I make.</p>
+    
+    <h3>¿Por qué es importante la ciberseguridad?</h3>
+    <p>Other things that may interest you about me is that I speak four languages, French, Spanish, Catalan and English. The last one being the one I speak the least, hence the idea of running the blog in English. Maybe I will also put it in the other languages, I'll see how much free time I have. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit leo at ante fermentum, non volutpat dolor scelerisque. Proin ac odio massa.</p>
+    
+    <h3>Conceptos Fundamentales</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at ipsum a justo aliquet venenatis. Maecenas auctor ex id ligula ullamcorper bibendum.</p>
+
+    <!-- Bloque de código estilo Bash -->
+    <div class="code-block">
+      <p><span class="prompt">$</span> sudo apt update</p>
+      <p><span class="prompt">$</span> sudo apt install nmap</p>
+      <p><span class="prompt">$</span> nmap -sV -p 80,443 example.com</p>
+    </div>
+
+    <h3>Herramientas de Ciberseguridad</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lectus quis metus varius bibendum.</p>
+
+    <!-- Galería de imágenes de ejemplo -->
+    <div class="image-gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Ejemplo 1">
+      <img src="https://via.placeholder.com/300x200" alt="Ejemplo 2">
+    </div>
+    
+    <h3>Conclusión</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Vivamus accumsan, orci a hendrerit feugiat, justo turpis mollis est, sit amet sollicitudin lorem ipsum non urna.</p>
+    <h2>Introducción a la Ciberseguridad</h2>
+    <p>La ciberseguridad es el conjunto de prácticas diseñadas para proteger las redes, dispositivos, programas y datos de ataques, daños o acceso no autorizado. En esta entrada exploraremos algunos conceptos básicos.</p>
+    
+    <h3>¿Por qué es importante la ciberseguridad?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit leo at ante fermentum, non volutpat dolor scelerisque. Proin ac odio massa.</p>
+    
+    <h3>Conceptos Fundamentales</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at ipsum a justo aliquet venenatis. Maecenas auctor ex id ligula ullamcorper bibendum.</p>
+
+    <div class="terminal">
+      <div class="terminal-header">
+          <span class="terminal-button red"></span>
+          <span class="terminal-button yellow"></span>
+          <span class="terminal-button green"></span>
+          <span class="terminal-title">kali@kali:~$</span>
+      </div>
+      <div class="terminal-body">
+          <p><span class="user-text">kali@kali:~$</span> <span class="command">sudo</span> <span class="command-text">apt</span> <span class="flag">update</span></p>
+          <p><span class="output-text">Obteniendo lista de paquetes... hecho</span></p>
+          <p><span class="output-text">Leyendo lista de paquetes... hecho</span></p>
+
+          <p><span class="user-text">kali@kali:~$</span> <span class="command">sudo</span> <span class="command-text">apt install</span> <span class="variable">nmap</span></p>
+          <p><span class="output-text">Leyendo lista de paquetes... hecho</span></p>
+          <p><span class="output-text">Creando árbol de dependencias</span></p>
+          <p><span class="output-text">Leyendo la información de estado... hecho</span></p>
+          <p><span class="output-text">Se instalarán los siguientes paquetes adicionales:</span></p>
+          <p><span class="output-text">  <span class="variable">nmap-common</span></span></p>
+          <p><span class="command">¿Desea continuar? [S/n]</span> s</p>
+
+          <p><span class="user-text">kali@kali:~$</span> <span class="command">exit</span></p>
+          <p><span class="output-text">logout</span></p>
+      </div>
+  </div>
+
+    <h3>Herramientas de Ciberseguridad</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac lectus quis metus varius bibendum.</p>
+
+    <!-- Galería de imágenes de ejemplo -->
+    <div class="image-gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Ejemplo 1">
+      <img src="https://via.placeholder.com/300x200" alt="Ejemplo 2">
+    </div>
+    
+    <h3>Conclusión</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Vivamus accumsan, orci a hendrerit feugiat, justo turpis mollis est, sit amet sollicitudin lorem ipsum non urna.</p>
+  
+</div>
+
+    <script src="/src/javascripts/scripts.js"></script>
+    <script src="/src/javascripts/titleAnimation.js"></script>
+</body>
+</html>

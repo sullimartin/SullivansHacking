@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Navbar</title>
+    <link rel="stylesheet" href="/src/stylesheets/styles.css" />
+  </head>
+  <body>
+    <!-- Título animado -->
+    <a href="/src/html/index.html"><h1 class="animated-title"></h1></a>
+
+    <!-- Barra de navegación lateral izquierda -->
+    <div class="navbar-container">
+      <div class="folder">
+        <span onclick="toggleFolder(this)">root@sulli</span>
+        <ul>
+          <li>
+            <a class="file" href="/src/html/root_sulli/biografia.html"
+              >Biografia</a
+            >
+          </li>
+          <li>
+            <a class="file" href="/src/html/root_sulli/diplomas.html"
+              >Diplomas</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="folder">
+        <span onclick="toggleFolder(this)">CTF Writeups</span>
+        <ul>
+          <li>
+            <div class="folder">
+                <span onclick="toggleFolder(this)">Over The Wire</span>
+                <ul>
+                    <li>
+                        <a href="/src/html/ctf_writeups/over_the_wire/bandit.html" class="file">Bandit</a>
+                    </li>
+                    <li>
+                        <a href="/src/html/ctf_writeups/over_the_wire/natas.html" class="file">Natas</a>
+                    </li>
+                    <li>
+                        <a href="/src/html/ctf_writeups/over_the_wire/leviathan.html" class="file">Leviathan</a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="folder">
+        <span onclick="toggleFolder(this)">Proyectos</span>
+        <ul>
+          <li>
+            <a class="file" href="/src/html/proyectos/snipe_code.html"
+              >Snipe code</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="folder">
+        <span onclick="toggleFolder(this)">Game Hacking</span>
+        <ul>
+            <li>
+                <a href="/src/html/game_hacking/game_hacking_academy.html" class="file">Gamge Hacking Academy</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AQUI VA EL RESTO DE LA PAGINA -->
+
+    <script src="/src/javascripts/scripts.js"></script>
+    <script src="/src/javascripts/titleAnimation.js"></script>
+  </body>
+</html>
