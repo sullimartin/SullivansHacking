@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hacker Navbar</title>
-    <link rel="stylesheet" href="./src/stylesheets/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Título animado -->
@@ -13,7 +13,7 @@
     <!-- Barra de navegación lateral izquierda -->
     <div id="navbar"></div>
     <script>
-      fetch("/templates/navbar.html")
+      fetch("./templates/navbar.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("navbar").innerHTML = data;
@@ -39,7 +39,7 @@
         time I have.
       </p>
     </div>
-    <script src="./src/javascripts/scripts.js"></script>
-    <script src="./src/javascripts/titleAnimation.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/titleAnimation.js"></script>
   </body>
 </html>
