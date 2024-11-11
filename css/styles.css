@@ -65,8 +65,7 @@ body {
   }
   
   .folder > span,
-  .file,
-  a {
+  .file{
     cursor: pointer;
     padding: 4px;
     color: var(--font-color);
