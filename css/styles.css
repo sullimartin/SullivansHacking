@@ -7,6 +7,7 @@
 /* Estilo para el fondo general */
 body {
   background-color: var(--background);
+  text-align: center;
 }
 
 /* Estilo para el título animado */
